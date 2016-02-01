@@ -716,6 +716,9 @@ public class Shopping_Calculator extends javax.swing.JFrame {
         
         i = (r300+r200+r100+rClub+rVip);//calculate number of tickets
         s = (10);//calculate shipping
+        if(i==0){
+           s = (0);
+        }
         if(i>10){
             s = s+2;
         }
@@ -724,7 +727,7 @@ public class Shopping_Calculator extends javax.swing.JFrame {
         String shipping = String.format("%.2f", s);
         String processing = String.format("%.2f", p);
         x = ((r*tax)/100);
-        total = (r+x);
+        total = (r+x+s+p);
         String taxCost = String.format("%.2f", x);
         String totalCost = String.format("%.2f", total);
         jTextField12.setText(totalCost);
