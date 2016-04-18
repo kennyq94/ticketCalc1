@@ -1,1 +1,3 @@
-read me for ticketCalc
+#ticketCalc
+
+A simple side project to calculate football game tickets using JFram Forms.
